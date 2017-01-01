@@ -1,0 +1,76 @@
+.detail-left { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    background-size: 100% !important; 
+
+}
+
+.detail-right { 
+    position: absolute; 
+    width: 40%; 
+    height: 100%; 
+    top: 0; 
+    right: 0; 
+    background: #fff; 
+    padding: 5rem; 
+}
+
+h1 { 
+    font-size: 1.5em;
+}
+
+a#view-behance { 
+    background: #23292c; 
+    color: #fff !important;
+    padding: 12px 17px; 
+    margin-top: 40px; 
+    display: block; 
+    text-align: center; 
+    border-radius: 30px; 
+    -moz-border-radius: 30px;
+}
+
+a#view-behance:hover { 
+    background: #333c3f; 
+}
+
+#backlink { 
+    margin-bottom: 50px; 
+    display: block; 
+    color: grey; 
+    margin-left: -18px; 
+}
+
+#slider { 
+    position: absolute; 
+    width: 3px; 
+    height: 100%; 
+    background: #28b1f5;
+    left: 0; 
+    top: 0; 
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    .detail-right { 
+        width: 50%; 
+        padding: 2.5em; 
+    }
+}
+
+@media only screen and (min-width: 40em) { 
+    .detail-left { 
+        position: absolute; 
+        width: 100%; 
+        height: 30%; 
+    }
+
+    .detail-right { 
+        position: relative; 
+        width: 100%; 
+        height: 100%; 
+        padding: 2em; 
+    }
+}

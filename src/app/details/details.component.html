@@ -1,0 +1,13 @@
+<div *ngIf="project"> 
+  <div class="detail-left" [ngStyle]="{'background': '#cecece url('+project.covers.original +') no-repeat'}" [@slideIn] = 'state'></div> 
+
+  <div class="detail-right" [@slideInRight]='state'>
+    <div id="slider" [@slider]='state2'></div>
+
+    <a routerLink="/" id="backlink">&lt;- Back to Projects</a>
+    <h1>{{ project.name }}</h1>
+    <p>{{ project.description }}</p>
+
+    <a href="{{ project.url }}" id="view-behance">View on Behance</a>
+  </div>
+</div>

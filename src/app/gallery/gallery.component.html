@@ -1,0 +1,33 @@
+<div *ngIf="projects"[@slideIn] = 'state'> 
+    
+    <div id="thumb-container">
+    <div *ngFor="let project of projects" class="thumbs">
+      <a routerLink="/project/{{ project.id }}">
+        <div class="project-info">
+          <p>{{ project.name }}</p>
+        </div>
+        <img src="{{ project.covers['230'] }}">
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="row pad feature"> 
+    <div class="columns small-12 large-1">
+        <img src="assets/icon-frontend.png">
+    </div>
+     <div class="columns small-12 large-5">
+        <h3>Frontend Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+     <div class="columns small-12 large-1 offset-1">
+        <img src="assets/icon-backend.png">
+    </div>
+     <div class="columns small-12 large-5">
+        <h3>Backend Development</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</div>
+
+
